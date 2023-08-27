@@ -15,7 +15,11 @@ describe("Es Bisiesto", () => {
 
   it("no es bisiesto si es divisible por 100  pero no por 400",()=>{
     expect(anioBisiesto(1700)).toEqual(false); 
-});
+  });
+
+  it(" es bisiesto si es divisible por 4  pero no por 100",()=>{
+    expect(anioBisiesto(2008)).toEqual(true); //usando la funcion anioBisiesto
+  });
 
 
 });
